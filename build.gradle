@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.google.cloud:spring-cloud-gcp-starter-storage:2.0.0'
+    implementation 'com.google.cloud:google-cloud-vision:3.30.0'
+    implementation 'com.google.cloud:google-cloud-core:2.29.0'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+/*application {
+    mainClassName = 'com.example.YourApplicationClass'
+}*/
+
+/*bootJar {
+    archiveFileName = 'your-application-name.jar'
+    destinationDirectory = file('build/libs')
+}*/
